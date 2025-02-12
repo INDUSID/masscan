@@ -16,7 +16,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest]
+        os: [blacksmith-32vcpu-ubuntu-2204, macos-latest]
     steps:
       - name: Checkout masscan
         uses: actions/checkout@v3
